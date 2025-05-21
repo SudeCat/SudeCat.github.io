@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sude Ebrar Çat - Personal Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 3px solid #6c5ce7;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .header h1 {
+            color: #2d3436;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .info-box i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #6c5ce7;
+        }
+
+        .info-box h3 {
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+
+        .info-box p {
+            color: #636e72;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="header">
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Sude Ebrar Çat">
+                </div>
+                <h1>Sude Ebrar Çat</h1>
+                <p>Software Developer</p>
+            </div>
+            <div class="info-grid">
+                <a href="mailto:catsudeebrar@gmail.com" class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>catsudeebrar@gmail.com</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/sude-ebrar-çat-63ba651b3" target="_blank" class="info-box">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me on LinkedIn</p>
+                </a>
+                
+                <a href="https://github.com/SudeCat" target="_blank" class="info-box">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Check out my projects</p>
+                </a>
+                
+                <a href="https://docs.google.com/document/d/1kxtJkkeuMmsFKhqHNdCYI6VEcwFEgegL4hTf7NaTTik/edit?usp=sharing" target="_blank" class="info-box">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Resume</h3>
+                    <p>View my CV</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
